@@ -302,6 +302,8 @@ struct GroupCollection_tFFA1789730DD9EA122FBE77DC03BFEDCC3F2945E;
 struct Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D;
 // System.Collections.IDictionary
 struct IDictionary_t6D03155AF1FA9083817AA5B6AD7DEEACC26AB220;
+// System.Collections.IEnumerator
+struct IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA;
 // System.IOAsyncCallback
 struct IOAsyncCallback_tDBBA8BBDA6B203613680E77BD4AD6320A1268388;
 // System.IOAsyncResult
@@ -368,6 +370,8 @@ struct TextStyleSheet_t86A0FA5523897465F371A2ABC17DFA3558C8D15E;
 struct Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700;
 // UnityEngine.Texture2D
 struct Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4;
+// ToggleSleeping
+struct ToggleSleeping_t149522DB6FE671BBBEE3402D7B39B5358658A9CD;
 // UnityEngine.TouchScreenKeyboard
 struct TouchScreenKeyboard_tE87B78A3DAED69816B44C99270A734682E093E7A;
 // System.Type
@@ -1143,6 +1147,28 @@ struct SingleRangeComparer_t2D299E0E54D7F24BAF67EA65E92B6FCDB806F9D0  : public R
 // UnityEngine.TextCore.Text.SpriteAsset/<>c
 struct U3CU3Ec_t04E77827D54CC7D69F04FDFC5A84C3F7392F9A76  : public RuntimeObject
 {
+};
+
+// ToggleSleeping/<ResetCount>d__8
+struct U3CResetCountU3Ed__8_t6765C7723AEDC465D8676A20A42B926E85BCE4A7  : public RuntimeObject
+{
+	// System.Int32 ToggleSleeping/<ResetCount>d__8::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Object ToggleSleeping/<ResetCount>d__8::<>2__current
+	RuntimeObject* ___U3CU3E2__current_1;
+	// ToggleSleeping ToggleSleeping/<ResetCount>d__8::<>4__this
+	ToggleSleeping_t149522DB6FE671BBBEE3402D7B39B5358658A9CD* ___U3CU3E4__this_2;
+};
+
+// ToggleSleeping/<ResetIsPlaying>d__9
+struct U3CResetIsPlayingU3Ed__9_t185C6F391FEABB69B29D797B3DC1E5FE572C4818  : public RuntimeObject
+{
+	// System.Int32 ToggleSleeping/<ResetIsPlaying>d__9::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Object ToggleSleeping/<ResetIsPlaying>d__9::<>2__current
+	RuntimeObject* ___U3CU3E2__current_1;
+	// ToggleSleeping ToggleSleeping/<ResetIsPlaying>d__9::<>4__this
+	ToggleSleeping_t149522DB6FE671BBBEE3402D7B39B5358658A9CD* ___U3CU3E4__this_2;
 };
 
 // System.Uri/MoreInfo
@@ -5587,6 +5613,12 @@ struct ToggleSleeping_t149522DB6FE671BBBEE3402D7B39B5358658A9CD  : public MonoBe
 	Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* ___rabbitAnimator_4;
 	// UnityEngine.Animator ToggleSleeping::roomAnimator
 	Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* ___roomAnimator_5;
+	// System.Int32 ToggleSleeping::clickCount
+	int32_t ___clickCount_6;
+	// System.Boolean ToggleSleeping::isPlayingSong
+	bool ___isPlayingSong_7;
+	// System.Collections.IEnumerator ToggleSleeping::resetCoroutine
+	RuntimeObject* ___resetCoroutine_8;
 };
 
 // UnityEngine.EventSystems.UIBehaviour
@@ -6372,6 +6404,14 @@ struct U3CU3Ec_t04E77827D54CC7D69F04FDFC5A84C3F7392F9A76_StaticFields
 };
 
 // UnityEngine.TextCore.Text.SpriteAsset/<>c
+
+// ToggleSleeping/<ResetCount>d__8
+
+// ToggleSleeping/<ResetCount>d__8
+
+// ToggleSleeping/<ResetIsPlaying>d__9
+
+// ToggleSleeping/<ResetIsPlaying>d__9
 
 // System.Uri/MoreInfo
 
@@ -8315,9 +8355,15 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3463[3] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3468[3] = 
 {
 	static_cast<int32_t>(offsetof(XmlReader_t4C709DEF5F01606ECB60B638F1BD6F6E0A9116FD_StaticFields, ___IsTextualNodeBitmap_0)),static_cast<int32_t>(offsetof(XmlReader_t4C709DEF5F01606ECB60B638F1BD6F6E0A9116FD_StaticFields, ___CanReadContentAsBitmap_1)),static_cast<int32_t>(offsetof(XmlReader_t4C709DEF5F01606ECB60B638F1BD6F6E0A9116FD_StaticFields, ___HasValueBitmap_2)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3473[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3471[3] = 
+{
+	static_cast<int32_t>(offsetof(U3CResetCountU3Ed__8_t6765C7723AEDC465D8676A20A42B926E85BCE4A7, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CResetCountU3Ed__8_t6765C7723AEDC465D8676A20A42B926E85BCE4A7, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CResetCountU3Ed__8_t6765C7723AEDC465D8676A20A42B926E85BCE4A7, ___U3CU3E4__this_2)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3472[3] = 
+{
+	static_cast<int32_t>(offsetof(U3CResetIsPlayingU3Ed__9_t185C6F391FEABB69B29D797B3DC1E5FE572C4818, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CResetIsPlayingU3Ed__9_t185C6F391FEABB69B29D797B3DC1E5FE572C4818, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CResetIsPlayingU3Ed__9_t185C6F391FEABB69B29D797B3DC1E5FE572C4818, ___U3CU3E4__this_2)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3473[5] = 
+{
+	static_cast<int32_t>(offsetof(ToggleSleeping_t149522DB6FE671BBBEE3402D7B39B5358658A9CD, ___rabbitAnimator_4)),static_cast<int32_t>(offsetof(ToggleSleeping_t149522DB6FE671BBBEE3402D7B39B5358658A9CD, ___roomAnimator_5)),static_cast<int32_t>(offsetof(ToggleSleeping_t149522DB6FE671BBBEE3402D7B39B5358658A9CD, ___clickCount_6)),static_cast<int32_t>(offsetof(ToggleSleeping_t149522DB6FE671BBBEE3402D7B39B5358658A9CD, ___isPlayingSong_7)),static_cast<int32_t>(offsetof(ToggleSleeping_t149522DB6FE671BBBEE3402D7B39B5358658A9CD, ___resetCoroutine_8)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3477[4] = 
 {
 	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3481[2] = 
-{
-	static_cast<int32_t>(offsetof(ToggleSleeping_t149522DB6FE671BBBEE3402D7B39B5358658A9CD, ___rabbitAnimator_4)),static_cast<int32_t>(offsetof(ToggleSleeping_t149522DB6FE671BBBEE3402D7B39B5358658A9CD, ___roomAnimator_5)),};
